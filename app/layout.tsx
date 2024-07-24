@@ -17,8 +17,8 @@ const IBMPlex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'ImaginaFi',
-  description: 'AI-powered image generation for everyone',
+  title: 'MenuPlus',
+  description: 'A new way to find and remember your favorite foods.',
 };
 
 export default function RootLayout({
