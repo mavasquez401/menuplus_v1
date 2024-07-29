@@ -6,24 +6,24 @@ export const navLinks = [
   },
   {
     label: 'Next Meal?',
-    route: '/transformations/add/restore',
+    route: '/nextmeal',
     icon: '/assets/icons/image.svg',
   },
   {
     label: 'MyMenu',
-    route: '/transformations/add/fill',
+    route: '/atm',
     icon: '/assets/icons/stars.svg',
   },
   {
     label: 'Scan New Menu',
-    route: '/transformations/add/remove',
+    route: '/menuscan',
     icon: '/assets/icons/scan.svg',
   },
-  //   {
-  //     label: 'Object Recolor',
-  //     route: '/transformations/add/recolor',
-  //     icon: '/assets/icons/filter.svg',
-  //   },
+  {
+    label: 'Ask ChefAI',
+    route: '/chef',
+    icon: '/assets/icons/filter.svg',
+  },
   //   {
   //     label: 'Background Remove',
   //     route: '/transformations/add/removeBackground',
