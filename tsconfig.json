@@ -8,6 +8,13 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
+
+    // Add this line for AI (No work Depricated)
+    // "forceConsistentCasingInFileNames": true,
+    // "rootDir": "./src",
+    // "outDir": "./build",
+    // "target": "es2017",
+
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
