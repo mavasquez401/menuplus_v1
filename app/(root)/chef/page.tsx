@@ -1,7 +1,14 @@
+import Chatter from '@/components/shared/Chatter';
+import { LogoutButton } from '@/components/shared/LogoutButton';
 import React from 'react';
 
 const PersonalChefAI = () => {
-  return <div>PersonalChefAI</div>;
+  return (
+    <>
+      <Chatter />
+      {/* <LogoutButton /> */}
+    </>
+  );
 };
 
 export default PersonalChefAI;
