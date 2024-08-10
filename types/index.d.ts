@@ -96,43 +96,20 @@ declare type TransformationTypeKey =
   | 'removeBackground';
 
 // ====== URL QUERY PARAMS
-declare type FormUrlQueryParams = {
-  searchParams: string;
-  key: string;
-  value: string | number | null;
+
+declare type SignInInputs = {
+  email: string;
+  password: string;
 };
 
-declare type UrlQueryParams = {
-  params: string;
-  key: string;
-  value: string | null;
-};
-
-declare type RemoveUrlQueryParams = {
-  searchParams: string;
-  keysToRemove: string[];
+declare type SignUpInputs = SignInInputs & {
+  firstName: string;
+  lastName: string;
+  age: number;
+  height: number;
 };
 
 declare type SearchParamProps = {
   params: { id: string; type: TransformationTypeKey };
   searchParams: { [key: string]: string | string[] | undefined };
-};
-
-declare type TransformationFormProps = {
-  action: 'Add' | 'Update';
-  userId: string;
-  type: TransformationTypeKey;
-  creditBalance: number;
-  data?: IImage | null;
-  config?: Transformations | null;
-};
-
-declare type TransformedImageProps = {
-  image: any;
-  type: string;
-  title: string;
-  transformationConfig: Transformations | null;
-  isTransforming: boolean;
-  hasDownload?: boolean;
-  setIsTransforming?: React.Dispatch<React.SetStateAction<boolean>>;
 };
